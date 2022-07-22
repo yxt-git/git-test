@@ -79,6 +79,9 @@ public class WorkController {
     @RequestMapping("/delete")
     public R delete(@RequestBody Integer[] userIds){
 		workService.removeByIds(Arrays.asList(userIds));
+
+
+
         return R.ok();
     }
 
